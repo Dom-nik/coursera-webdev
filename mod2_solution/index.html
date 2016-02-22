@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Dominik Maj">
+	<title>The responsive page</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+	h1 {
+		color: navy;
+		font-family: Helvetica, Arial, Sans-serif;
+		text-align: center;
+	}
+	
+	div.container {
+		position: relative;
+		background-color: red;
+		width: 100%;
+		padding: 0px;
+		margin: 0px;
+	}
+	
+	div.content {
+		float: left;
+		border: 3px solid;
+		background-color: lightgrey;
+		padding: 0px;
+	}
+	
+	div h2 {
+		position: relative;
+		top: 0px;
+		right: 0px;
+		border: 3px solid;
+		margin: 0px;
+		width: 30%;
+	}
+	#meat {
+		background-color: maroon;
+	}
+	#soup {
+		background-color: gold;
+	}
+	#vegetables {
+		background-color: green;
+	}
+	
+	@media (min-width: 992px){
+		.col-lg-4 {
+			width: 33%;
+			float: left;
+		}
+	}
+	
+	@media (min-width: 768px) and (max-width: 991px){
+		.col-md-6 {
+			width: 50%;
+			float: left;
+		}
+	}
+	
+	@media (max-width: 767px){
+		.col-sm-12 {
+			width: 100%;
+			float: left;
+		}
+	}
+	</style> 
+
+</head>
+<body>
+<h1>Our Menu</h1>
+<div class="container">
+<div class="row">
+	<div class="content col-lg-4 col-md-6 col-sm-12">
+		<h2 id="meat">Meat</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget vestibulum velit, sed venenatis sapien. Suspendisse mauris dolor, dapibus sed massa vel, gravida ornare erat. Donec vehicula bibendum blandit. Maecenas ut suscipit ipsum. Praesent venenatis massa id libero sodales tincidunt. Curabitur elementum feugiat rutrum. Ut nulla nisi, mollis vitae justo ac, fermentum egestas dui. Sed vitae consectetur lectus. Praesent sit amet pretium dui. In pretium sapien non risus fermentum varius.
+		</p>
+	</div>
+	
+	<div class="content col-lg-4 col-md-6 col-sm-12">
+		<h2 id="soup">Soup</h2>
+		<p>
+		Morbi convallis dapibus dolor, nec consequat ex condimentum non. Sed eget mauris nec mauris dictum laoreet imperdiet scelerisque ipsum. Duis quis aliquet sapien. Mauris a viverra justo. Praesent non lorem dapibus, tincidunt risus laoreet, aliquet arcu. Duis ut lacus convallis, dapibus purus eu, faucibus felis. Etiam a diam tincidunt risus consequat condimentum. Nullam non mi a metus laoreet aliquam. Pellentesque auctor, massa sit amet porttitor vestibulum, purus massa faucibus risus, vitae finibus ante metus dignissim urna. Etiam porttitor sollicitudin rhoncus.
+		</p>
+	</div>
+	
+	<div class="content col-lg-4 col-md-6 col-sm-12">
+		<h2 id="vegetables">Vegetables</h2>
+		<p>
+		Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat.
+		</p>
+	</div>
+</div>
+</div>
+</body>
+</html>
