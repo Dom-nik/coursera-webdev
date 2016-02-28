@@ -1,5 +1,68 @@
+* {
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, Sans-serif;
+}
+
 h1 {
 	color: navy;
-	font-family: Helvetica, Arial, Sans-serif;
 	text-align: center;
+}
+
+p{
+	margin: 40px 15px 15px 15px;
+}
+
+div.column {
+	padding: 10px;
+	float: left;
+}
+
+div.content {
+	position: relative;
+	border: 1px solid;
+	background-color: lightgrey;
+}
+
+div h2 {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	border-width: 0px 0px 1px 1px;
+	border-style: solid;
+	margin: 0px;
+	width: 150px;
+	text-align: center;
+}
+#meat {
+	background-color: maroon;
+	color: white;
+	border-color: black;
+}
+#soup {
+	background-color: gold;
+}
+#vegetables {
+	background-color: green;
+}
+
+@media (min-width: 992px){
+	.col-lg-4 {
+		width: 33%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	.col-md-6 {
+		width: 50%;
+		float: left;
+	}
+	.col-md-12 {
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px){
+	.col-sm-12 {
+		width: 100%;
+	}
 }
