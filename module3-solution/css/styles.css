@@ -2,8 +2,13 @@
 	border-radius: 0;
 }
 
-div.navbar-brand {
+div.container {
+	margin: 0;
 	padding: 0;
+}
+
+div.navbar-brand {
+	padding: 0 0 0 20px;
 }
 
 div.navbar-brand a:hover {
@@ -38,8 +43,6 @@ div.navbar-brand h1 {
 	background-color: #FFF;
 }
 
-@media (min-width: 768px){
-	#collapsable-nav{
-		display: none;
-	}
+button.navbar-toggle {
+  margin-right: 25px;
 }
